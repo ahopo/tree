@@ -1,4 +1,4 @@
-package main
+package tree
 
 import (
 	"strings"
@@ -6,15 +6,6 @@ import (
 	"github.com/ahopo/ccmd"
 	"github.com/ahopo/ccmd/git"
 )
-
-func main() {
-	// g := ccmd.InitGit()
-	// g.SetRepo("https://gitlab.mynt.xyz/cluster5/gaws.git")
-	// g.SetRootFolder(".")
-	// g.SetSuperBranch("master")
-	t := Init("https://gitlab.mynt.xyz/cluster5/gaws.git", ".", "master")
-	t.Clone()
-}
 
 type Tree struct {
 	g git.Config
